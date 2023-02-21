@@ -19,10 +19,6 @@ app.get('/', (req, res) => {
     res.send("We are on home")
 })
 
-app.get('/posts', (req, res) => {
-    res.send("We are on posts")
-})
-
 //CONNECT TO DB
 mongoose.set('strictQuery', true);
 mongoose.connect(process.env.DB_CONNECTION, () => {
